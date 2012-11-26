@@ -1,0 +1,33 @@
+parameters:
+	bootstrapDir: %libsDir%/twitter/bootstrap
+
+resources:
+	styles:
+		bootstrap:
+			filename: %bootstrapDir%/less/bootstrap.less
+		bootstrap.responsive:
+			filename: %bootstrapDir%/less/responsive.less
+			depends: bootstrap
+
+	scripts:
+		# from bootstrap Makefile bootstrap section
+		bootstrap:
+			copyright: "/*!\n* Bootstrap.js by @fat & @mdo\n* Copyright 2012 Twitter, Inc.\n* http://www.apache.org/licenses/LICENSE-2.0.txt\n*/"
+			multiple:
+				dir: %bootstrapDir%/js
+				prefix: bootstrap-
+				files:
+					- transition.js
+					- alert.js
+					- button.js
+					- carousel.js
+					- collapse.js
+					- dropdown.js
+					- modal.js
+					- tooltip.js
+					- popover.js
+					- scrollspy.js
+					- tab.js
+					- typeahead.js
+					- affix.js
+			depends: jquery
