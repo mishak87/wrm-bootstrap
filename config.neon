@@ -31,3 +31,7 @@ resources:
 					- typeahead.js
 					- affix.js
 			depends: jquery
+
+		bootstrap.netteForms:
+			filename: %libsDir%/mishak/wrm-bootstrap/bootstrap.netteForms.js
+			depends: [ netteForms, bootstrap ]
