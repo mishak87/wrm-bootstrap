@@ -12,7 +12,8 @@
 		}
 	],
 	"require": {
-		"mishak/web-resource-management": ">=0.1.1",
-		"mishak/wrm-jquery": ">=1.8.3"
+		"mishak/web-resource-management": ">=1.2.1",
+		"mishak/wrm-jquery": ">=1.8.3",
+		"twitter/bootstrap": "2.2.2"
 	}
 }

@@ -7,21 +7,21 @@ This is still experimental and I am working on way to circumvent composer defini
 
 ### Composer
 
-Add to `composer.json` requirement `"twitter/bootstrap": "2.2.1"` and add `twitter/bootstrap` to repositories:
+Add `twitter/bootstrap` to repositories in `composer.json`:
 
 	"repositories": [
 		{
 			"type": "package",
 			"package": {
-				"version": "2.2.1",
+				"version": "2.2.2",
 				"name": "twitter/bootstrap",
 				"source": {
 					"url": "https://github.com/twitter/bootstrap.git",
 					"type": "git",
-					"reference": "tags/v2.2.1"
+					"reference": "tags/v2.2.2"
 				},
 				"dist": {
-					"url": "https://github.com/twitter/bootstrap/zipball/v2.2.1",
+					"url": "https://github.com/twitter/bootstrap/zipball/v2.2.2",
 					"type": "zip"
 				}
 			}
