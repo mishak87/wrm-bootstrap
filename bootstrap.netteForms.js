@@ -63,10 +63,12 @@ Bootstrap.netteForms.validateForm = function(sender) {
 		}
 		if (!Nette.validateControl(elem)) {
 			Bootstrap.netteForms.setErrorTooltip(elem);
-			if (elem.focus) {
-				elem.focus();
-			}
 			errors++;
+			if(errors === 1){
+				if (elem.focus) {
+ 					elem.focus();
+				} 
+			}
 		} else {
 			Bootstrap.netteForms.cleanupError(elem);
 		}
